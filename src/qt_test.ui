@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>qt_test</class>
+ <widget class="QMainWindow" name="qt_test">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>980</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyPlan - 任务计划管理器</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <property name="spacing">
+     <number>14</number>
+    </property>
+    <property name="leftMargin">
+     <number>18</number>
+    </property>
+    <property name="topMargin">
+     <number>18</number>
+    </property>
+    <property name="rightMargin">
+     <number>18</number>
+    </property>
+    <property name="bottomMargin">
+     <number>14</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="headerLayout">
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="titleLabel">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="text">
+         <string>MyPlan</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="subtitleLabel">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="text">
+         <string>安排今天，准备明天，回看过去。</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="dailyTab">
+       <attribute name="title">
+        <string>每日计划</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="dailyLayout">
+        <property name="spacing">
+         <number>12</number>
+        </property>
+        <property name="leftMargin">
+         <number>14</number>
+        </property>
+        <property name="topMargin">
+         <number>14</number>
+        </property>
+        <property name="rightMargin">
+         <number>14</number>
+        </property>
+        <property name="bottomMargin">
+         <number>14</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="dailyModeLayout">
+          <item>
+           <widget class="QPushButton" name="todayPlanBtn">
+            <property name="text">
+             <string>今日计划</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="tomorrowPlanBtn">
+            <property name="text">
+             <string>明日计划</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="historyPlanBtn">
+            <property name="text">
+             <string>历史查询</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="dailyModeSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="dailyStatsLabel">
+            <property name="text">
+             <string>共 0 项 · 已完成 0 · 未完成 0</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="dailyFilterLayout">
+          <item>
+           <widget class="QLabel" name="dailyViewLabel">
+            <property name="text">
+             <string>今日计划</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="historyRangeCombo">
+            <item>
+             <property name="text">
+              <string>全部历史</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>近一周</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>具体某一天</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="historyDateCombo"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="historySearchEdit">
+            <property name="placeholderText">
+             <string>搜索历史计划...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="dailyFilterSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QComboBox" name="dailyStatusFilter">
+            <property name="maximumWidth">
+             <number>96</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>全部</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>未完成</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>已完成</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="dailyTaskTable">
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="columnCount">
+           <number>5</number>
+          </property>
+          <column>
+           <property name="text">
+            <string>完成</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>优先级</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>任务</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>描述</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>操作</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="todoTab">
+       <attribute name="title">
+        <string>待办事项</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="todoLayout">
+        <property name="spacing">
+         <number>12</number>
+        </property>
+        <property name="leftMargin">
+         <number>14</number>
+        </property>
+        <property name="topMargin">
+         <number>14</number>
+        </property>
+        <property name="rightMargin">
+         <number>14</number>
+        </property>
+        <property name="bottomMargin">
+         <number>14</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="todoFilterLayout">
+          <item>
+           <widget class="QLabel" name="todoStatsLabel">
+            <property name="text">
+             <string>共 0 项 · 已完成 0 · 未完成 0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="todoSearchEdit">
+            <property name="placeholderText">
+             <string>搜索标题或描述...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="todoStatusFilter">
+            <property name="maximumWidth">
+             <number>96</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>全部</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>未完成</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>已完成</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="todoTaskTable">
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="columnCount">
+           <number>5</number>
+          </property>
+          <column>
+           <property name="text">
+            <string>完成</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>截止日期</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>待办事项</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>描述</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>操作</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,32 @@
+[
+{
+  "directory": "D:/MyPlan/build",
+  "command": "D:\\QT\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -ID:/MyPlan/build -ID:/MyPlan -ID:/MyPlan/build/qt_test_autogen/include -isystem D:/QT/6.9.3/mingw_64/include/QtWidgets -isystem D:/QT/6.9.3/mingw_64/include -isystem D:/QT/6.9.3/mingw_64/include/QtCore -isystem D:/QT/6.9.3/mingw_64/mkspecs/win32-g++ -isystem D:/QT/6.9.3/mingw_64/include/QtGui -std=gnu++17 -fno-strict-aliasing -o CMakeFiles\\qt_test.dir\\qt_test_autogen\\mocs_compilation.cpp.obj -c D:\\MyPlan\\build\\qt_test_autogen\\mocs_compilation.cpp",
+  "file": "D:\\MyPlan\\build\\qt_test_autogen\\mocs_compilation.cpp",
+  "output": "CMakeFiles\\qt_test.dir\\qt_test_autogen\\mocs_compilation.cpp.obj"
+},
+{
+  "directory": "D:/MyPlan/build",
+  "command": "D:\\QT\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -ID:/MyPlan/build -ID:/MyPlan -ID:/MyPlan/build/qt_test_autogen/include -isystem D:/QT/6.9.3/mingw_64/include/QtWidgets -isystem D:/QT/6.9.3/mingw_64/include -isystem D:/QT/6.9.3/mingw_64/include/QtCore -isystem D:/QT/6.9.3/mingw_64/mkspecs/win32-g++ -isystem D:/QT/6.9.3/mingw_64/include/QtGui -std=gnu++17 -fno-strict-aliasing -o CMakeFiles\\qt_test.dir\\src\\main.cpp.obj -c D:\\MyPlan\\src\\main.cpp",
+  "file": "D:\\MyPlan\\src\\main.cpp",
+  "output": "CMakeFiles\\qt_test.dir\\src\\main.cpp.obj"
+},
+{
+  "directory": "D:/MyPlan/build",
+  "command": "D:\\QT\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -ID:/MyPlan/build -ID:/MyPlan -ID:/MyPlan/build/qt_test_autogen/include -isystem D:/QT/6.9.3/mingw_64/include/QtWidgets -isystem D:/QT/6.9.3/mingw_64/include -isystem D:/QT/6.9.3/mingw_64/include/QtCore -isystem D:/QT/6.9.3/mingw_64/mkspecs/win32-g++ -isystem D:/QT/6.9.3/mingw_64/include/QtGui -std=gnu++17 -fno-strict-aliasing -o CMakeFiles\\qt_test.dir\\src\\qt_test.cpp.obj -c D:\\MyPlan\\src\\qt_test.cpp",
+  "file": "D:\\MyPlan\\src\\qt_test.cpp",
+  "output": "CMakeFiles\\qt_test.dir\\src\\qt_test.cpp.obj"
+},
+{
+  "directory": "D:/MyPlan/build",
+  "command": "D:\\QT\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -ID:/MyPlan/build -ID:/MyPlan -ID:/MyPlan/build/qt_test_autogen/include -isystem D:/QT/6.9.3/mingw_64/include/QtWidgets -isystem D:/QT/6.9.3/mingw_64/include -isystem D:/QT/6.9.3/mingw_64/include/QtCore -isystem D:/QT/6.9.3/mingw_64/mkspecs/win32-g++ -isystem D:/QT/6.9.3/mingw_64/include/QtGui -std=gnu++17 -fno-strict-aliasing -o CMakeFiles\\qt_test.dir\\src\\task.cpp.obj -c D:\\MyPlan\\src\\task.cpp",
+  "file": "D:\\MyPlan\\src\\task.cpp",
+  "output": "CMakeFiles\\qt_test.dir\\src\\task.cpp.obj"
+},
+{
+  "directory": "D:/MyPlan/build",
+  "command": "D:\\QT\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -ID:/MyPlan/build -ID:/MyPlan -ID:/MyPlan/build/qt_test_autogen/include -isystem D:/QT/6.9.3/mingw_64/include/QtWidgets -isystem D:/QT/6.9.3/mingw_64/include -isystem D:/QT/6.9.3/mingw_64/include/QtCore -isystem D:/QT/6.9.3/mingw_64/mkspecs/win32-g++ -isystem D:/QT/6.9.3/mingw_64/include/QtGui -std=gnu++17 -fno-strict-aliasing -o CMakeFiles\\qt_test.dir\\src\\taskmanager.cpp.obj -c D:\\MyPlan\\src\\taskmanager.cpp",
+  "file": "D:\\MyPlan\\src\\taskmanager.cpp",
+  "output": "CMakeFiles\\qt_test.dir\\src\\taskmanager.cpp.obj"
+}
+]

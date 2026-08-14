@@ -1,0 +1,12 @@
+# ninja log v6
+7	145	8083476879245590	qt_test_autogen/timestamp	ff760e7b23f13d9d
+635	2055	8083467917534261	CMakeFiles/qt_test.dir/src/task.cpp.obj	1fe96f072cc58a3d
+7	145	8083476879245590	qt_test_autogen/mocs_compilation.cpp	ff760e7b23f13d9d
+623	2477	8083467917421885	CMakeFiles/qt_test.dir/src/main.cpp.obj	42a07f702dbadc9
+7	145	8083476879245590	D:/MyPlan/build/qt_test_autogen/timestamp	ff760e7b23f13d9d
+7	145	8083476879245590	D:/MyPlan/build/qt_test_autogen/mocs_compilation.cpp	ff760e7b23f13d9d
+641	2514	8083467917600930	CMakeFiles/qt_test.dir/src/taskmanager.cpp.obj	8f189eb328c19e91
+618	2530	8083467917373573	CMakeFiles/qt_test.dir/qt_test_autogen/mocs_compilation.cpp.obj	82b112d5b915db7f
+146	3103	8083476880631183	CMakeFiles/qt_test.dir/src/qt_test.cpp.obj	8c335d53cd1a8846
+7	1301	8083477177546651	qt_test.exe	f73de186350b0efa
+2	644	8084005940071003	build.ninja	d782b76f4f528fad
